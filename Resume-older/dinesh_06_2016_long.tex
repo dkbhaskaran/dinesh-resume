@@ -1,0 +1,282 @@
+\documentstyle[margin,line]{res}
+
+% Logos
+% =====
+
+\font\attand=cmr7
+%\font\MetafontLogoFont=logo10
+
+\def\PS{{\tt P\small OST\tt S\small CRIPT}}
+\def\ATT{{AT{\attand \&}T}}
+\def\MF{{METAFONT}}
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\AmSTeX{{$\cal A\kern-.1667em\lower.5ex\hbox{$\cal M$}\kern-.125em
+S$-\TeX}}
+
+%\renewcommand{\baselinestretch}{1.5}
+\setlength{\topmargin}{0pt}
+\setlength{\textheight}{10in}
+%\setlength{\parindent}{0pt}
+%\setlength{\textwidth}{5.5in}
+%\setlength{\topskip}{0in}
+%\setlength{\headheight}{0in}
+%\setlength{\headsep}{0in}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=5.8in
+%\textwidth=6.0in
+
+\begin{document}
+
+\name{DineshKumar Bhaskaran} 
+\address{email:- dineshkumarb@gmail.com,\\
+         github: https://github.com/dineshkumarbhaskaran, 
+         ph:- +91-963-269-8274}
+
+\begin{resume}
+
+\section{\sc Professional Experience } 
+Embedded/Storage Professional with 12+ years of progressive experience in embedded systems, parallel programming, storage products involving embedded fibre channel switch virtualisation and Linux kernel development projects.
+ 
+Area of expertise
+\begin{itemize}
+\item Experienced in Linux Kernel Programming, Porting and Board bring-up. Development of devices drivers for proprietary hardware.  
+\item Storage Virtualisation, Fibre Channel switch virtualisation and Storage applications.
+\item Experienced in High performance computing using OpenCL on various(Nvidia/AMD) GPGPU platforms.
+\item FC, SAM/SCSI 2 architecture \& Programming. Exposure to LSI Logic MPT architecture.
+\end{itemize}
+
+\section{\sc Professional summary}
+\begin{itemize}
+\renewcommand{\labelitemi}{$\diamond$}
+\item Principal Engineer - Canon India private limited (Mar '10 - till date)
+\item Engineer           - Brocade Communications Pvt. Ltd. (Jan '08 - Mar '10) 
+\item Specialist         - Tata Elxsi Pvt. Ltd. (Sep '03 - Dec '07)
+\end{itemize}
+
+\section{\sc Education}
+BITS Pilani \newline 
+M.S Software systems (Distance learning course) 2006-2009, cgpa 5.8.
+
+Govt Engg College, Trichur \newline
+B.Tech, Computer Engineering 1999-2003 Batch. Aggregate marks 71\%. 
+
+Kendriya Vidyalaya, Trichur\newline
+12th (CBSE). Aggregate mark 88.8\%
+
+\section{\sc Skill Set}
+
+\begin{format}
+\title{l}\\
+\end{format}
+
+\title {\em Protocol and Protocol Stack}
+\begin {position}
+Expertise in Fiber Channel and working knowledge of FCP. SCSI-2/SAM, Understanding of SCSI protocol and the SCSI protocol stack in Linux.  Exposure to USB
+\end{position}
+
+\title {\em Storage Devices }
+\begin {position}
+ Brocade switch series. Primarily Brocade's 48K switch \& Pizza boxes \\
+ Flexline Array Controller, Sony AIT SCSI, IDE tape drives SDX series, L180 Tape Library
+\end{position}
+
+\title {\em Medical Image processing}
+\begin{position}
+Image registration and related algorithms
+\end{position}
+
+\title {\em Languages and Scripting}
+\begin{position}
+C, OpenCL, Exposure to C++, Python. 
+\end{position}
+
+\title {\em IDE \& Tools} 
+\begin {position}
+GNU development tools, KGDB/GNU Debugger, Cscope/Ctags, GNU Make, Rational Clear case, svn, CPP-Unit testing framework, Coware (now part of Synopsys) Virtualisation Platform for SOC design, Microsoft, Install shield X.
+\end{position}
+
+\begin{format}
+\title{l}\employer{r}\\
+\location{l}\dates{r}\\
+\body\\
+\end{format}
+
+\section{\sc Career Profile}
+Most relevant Technical Projects executed till date.
+
+\title{\em 1. Canon Embedded Linux Platform}
+\employer {}
+\dates {1 year and 6 months} 
+\location {Canon India}
+
+\begin {position}
+This project requires porting, enhancing and maintaining Linux based operating system for Canon embedded products like Surveillance cameras, Projector, Network scanners etc. The project involves wide scope ranging from 
+\renewcommand{\labelitemi}{$\ast$}
+\begin{itemize}
+\item Porting Linux kernel (3.x based) to various Industry known SoCs like Intel Haswell, TI AM437x, Beagleboad, Xylinx ZC-702/ZC-706 and Canon proprietary embedded boards. 
+\item Support custom toolchain for multiple architectures including ARM. 
+\item Investigation of new Linux technologies.
+\item Ensuring real time support and testing. 
+\item Constant enhancement and fixing of Kernel Vulnerabilities. 
+\end{itemize}
+
+Involvement
+\renewcommand{\labelitemi}{$\bullet$}
+\begin{itemize}
+\item Responsible as a Lead for Project planning, execution, management, hiring, training, budgeting.
+\item Responsible for porting of multiple Linux kernel versions (3.10.x) for Canon proprietary board, ZC-706. 
+\item Involved in Cross compiler toolchain building and testing.
+\item Responsible for streamlining and automation of Testing process for Linux kernel and Real time testing. 
+\item Involved in automation of Linux kernel vulnerabilities investigation.
+\end{itemize}
+\end{position}
+\hrulefill
+
+\title{\em 2. Canon Parallelized Image processing library }
+\employer {}
+\dates {3 year and 8 months} 
+\location {Canon Inc, Japan and Canon India}
+
+\begin {position}
+This project involves in preparing an advanced parallel library on Linux for medical image processing algorithms with support for NVIDIA, AMD and X86 based platforms.  The whole library is developed in OpenCL and highly optimized to perform faster than some of open and free solutions in this domain like OpenCV and ITK and Canon internal solutions. \\
+Initial phase of this project involved in porting of Canon proprietary Digital radiography motion imaging software to OpenCL from HLSL (High level shader language). \\
+
+Involvement
+\begin{itemize}
+\item Responsible for Implementing and enhancing a complete Parallelized Image registration framework for both intensity based and Point based image registration related algorithms. This framework composes of algorithms like ICP, Powell optimizer, Regular gradient descent optimizer, Levenberg–Marquardt optimizer, Mutual Information, Normalized cross correlation, Ratio Image Uniformity, Sum of square differences, Euclidean distance metric and Resampler.
+\item Responsible for parallelizing image processing algorithms like Gaussian Blur, DFT, norm, determining Image statistics, performing Image normalization, Image Interpolation, Computation of 2D histogram.
+\item Responsible for performance analysis and comparison of OpenCV CUDA and OpenCL OCL implementation of various image processing algorithms. 
+\item Responsible for development of CPP-Unit based test framework for use of Canon India in early phase of development. It could automate CSV based testing, variation of performance parameters, test results and performance charts generations, template generations etc. 
+\item Responsible for porting DR motion software's image noise reduction (NR) module and image enhancement(EN) module to OpenCL. This task also required to reduce errors due to porting by finely adjusting floating point computation on OpenCL to match with HLSL and optimizing OpenCL implementation.
+\item Responsible for porting a portion of DR software to CELL broadband engines using proprietary compilers for performance analysis and study. 
+\end{itemize}
+\end{position}
+\hrulefill
+
+\title{\em 3. Canon proprietary SoC bring up with Linux.}
+\employer {}
+\dates {1 year and 1 month}
+\location {Canon Inc, Japan}
+\begin {position}
+Canon proprietary SoC based on arm-v6 was targeted towards network application devices. This project involved initially bringing up of Linux 2.6.36 on Coware Virtual platform as SoC was not available at the time and later on the board itself. \\
+This project also involved in developing UART UIO drivers on beagle board to study and compare the benefits user mode drivers. \\
+
+Involvement
+\begin{itemize} 
+\item Responsible for porting and bringing up of Linux kernel 2.6.36 on Coware Virtual Platform. It involved device driver development for basic devices like interrupt controller, UART etc. 
+\item Associated in the porting on U-boot.
+\item Responsible for development of a minimal user-land for the porting using busybox and for porting and testing the Linux kernel with LTP. 
+\item Responsible for developing UART-UIO driver and testing of the same on beagle board. Fine grained profiling of the read/write procedures and interrupt latency was carried out for modeling generic drivers as UIO drivers. 
+\item As an initial study of Virtual Platform hardware peripherals models were created and integrated to Virtual Platform in System C. I was responsible for the integration of reset-gen to Virtual Platform. 
+\end{itemize}
+\end{position}
+\hrulefill
+
+\title{\em 4. SAS (Storage area services)}
+\employer {}
+\dates {2 years and 3 months} 
+\location {Bangalore and US}
+\begin {position} 
+Brocade Storage Application Services (SAS) on Brocade 7600 Fabric Application Platform Switch provides fabric-based services through integration with high-performance storage applications. SAS delivers intelligence in SANs to perform fabric-based storage services, including online data migration, storage virtualisation, and continuous data replication and protection. SAS is successfully deployed in storage world with Brocade and OEM partner’s storage solutions like DMM, EMC Recover-point and Invist. \\
+
+Involvement
+\begin{itemize}
+\item Responsible for SAS enhancements and related development features. Worked through SAS v2.x to v3.x versions. 
+\item Responsible for handling SAS related customer issues and maintenance. 
+\item Enrolled ownership of virtual initiator module in SAS. 
+\item Multiple deputations in Brocade-US for facilitation of SAS co-ordination activities between on-site team and India team.
+\item Involved in every phase of porting, development and enhancement of SAS (primarily Virtual Initiator module) to next generation platforms like in Brocade WAN optimizer.  
+\end{itemize}
+\end{position}
+\hrulefill
+
+\title{\em 5. DVR-SMM (Digital Video Recording)}
+\employer{Client - Seagate, US  }
+\dates{6 months}
+\location{Bangalore}
+
+\begin {position}
+This project involved in conceptualization of a DVR (Digital Video Recording) product based on client proprietary Hard drives. This solution involved component development like stream file system, stream I/O scheduler and enhanced disk driver for the hard-drives. \\
+
+Involvement
+\begin{itemize}
+\item Module lead for Stream Scheduler (SS) module. SS Requirements elicitation and SRS preparation.
+\item Involved in Design and preliminary coding phase.
+\item zero copy implementation in Linux-2.6.12-3. Back porting of blktrace utility.
+\item Deputed on-site for demonstration purposes for POC phase.
+\end{itemize}
+\end{position}
+\hrulefill
+
+\title{\em 6. FCTMD (Fibre channel Target mode driver)}
+\employer{Client - CMS, Japan}
+\dates{1.2 Years}
+\location{Bangalore}
+
+\begin {position}
+The project involves in development of Target Mode driver for LSI logic FC HBAs which are based on LSI-Logic Fusion Message passing technology. \\
+
+Involvement
+\begin{itemize}
+\item Requirement analysis and design elaboration
+\item Understanding the LSI Logic Fusion -Message Passing Technology.
+\item Development of LSI Logic Fibre channel driver to work in standalone mode with real world devices and with Software RAID Controller system when required.
+\item Developed a proficient kernel memory leak detector which will trace various kernel memory allocation interfaces like kmalloc, vmalloc, alloc\_pages etc. for a kernel module and will generate a report when required or when the module exits. 
+
+\end{itemize}
+\end{position}
+\hrulefill
+
+\title{\em 7. Virtual Storage Management}
+\employer{Client - SUN, USA }
+\dates{8 months}
+\location{Bangalore}
+
+\begin{position}
+The VSM product line involves complete development of virtual storage management solutions for MVS (Mainframe) clients. The fibre channel tapes(3x90 series) are virtualised for infinite storage and high availability with SUN proprietary tape drives and libraries. \\
+
+Involvement
+\begin{itemize}
+\item  Implementation of 3490, 3590 Tape drive emulation (TDE) in the VSM product for MVS clients. This involved building up of basic framework structure for TDE.
+\item Individual contribution in implementation of 3490 commands (READFWD, WRITE, BSF, FSF, REWIND, WTM, and NOP).
+\item Implementation of Linux character driver IOCTL interface for dynamic testing by injecting tape commands to TDE.
+\end{itemize}
+\end{position}
+\hrulefill
+
+\title{\em 8. Swift}
+\employer{Client - Sony, USA}
+\dates{5 months}
+\location{Bangalore}
+
+\begin{position}
+This project involved firmware verification testing, compliance testing (towards Independent software vendors like Veritas, Arcsever, Netbackup) and WHQL testing of recent technology third generation AIT tape drives. Also involved in design and development of automated GUI tool in Windows for testing AIT-3 drives with SCSI-2 protocol tester card Itech-6160d.\\
+
+Involvement
+\begin{itemize}
+\item As Personal interest created a Test suite development and compliant testing towards different ISVs.
+\item Active participation in the development of the framework (both GUI and structural framework) and test case development for the tape commands INQUIRY, TEST UNIT READY, RESERVE, RELEASE, LOAD, UNLOAD, MOD SENSE, LOG SENSE.
+\end{itemize}
+\end{position}
+\hrulefill
+
+\section{\sc Technical Writing/Papers}
+1. A novel approach for GPU based derivative computation in similarity metrics for Image Registration(Internal): - This paper discussed the parallelization of similarity metric and it's derivative for a gradient based optimizers. A novel mathematical formulation for derivative computation of RatioImage Uniformity (RIU) and Sum of Absolute difference (SAD) metrics. This idea is currently under the process of patenting. - 2015
+
+2. Userspace I/O driver performance benchmarking (Internal) - 2010
+
+3. The Linux CFQ IO-Scheduler Part - 1. It describes the Linux block layer architecture with focus on how a I/O scheduler is interfaced in Block I/O subsystem - 2007
+
+4. Writing a Network Device driver. Published in Linux Gazette online magazine - 2003 \\
+http://www.tldp.org/LDP/LG/issue93/bhaskaran.html
+
+\section{\sc Extra Activities}
+I have interests in games like Table Tennis, Badminton, reading novels. 
+
+\section{\sc Declaration}
+The information I have provided is true to the best of my knowledge and belief.
+
+\end{resume}
+\end{document}

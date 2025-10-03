@@ -1,0 +1,386 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{memoir} % Font and paper size
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage{XCharter} % Use the Bitstream Charter font
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage[top=1.5cm,left=1.5cm,right=1.5cm,bottom=1.5cm]{geometry} % Modify margins
+
+\usepackage{graphicx} % Required for figures
+
+\usepackage{flowfram} % Required for the multi-column layout
+
+\usepackage{url} % URLs
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for custom colours
+
+\usepackage{tikz} % Required for the horizontal rule
+
+\usepackage{enumitem} % Required for modifying lists
+\setlist{noitemsep,nolistsep} % Remove spacing within and around lists
+
+\setlength{\columnsep}{\baselineskip} % Set the spacing between columns
+
+% Define the left frame (sidebar)
+%\newflowframe{0.2\textwidth}{\textheight}{0pt}{0pt}[left]
+%\newlength{\LeftMainSep}
+%\setlength{\LeftMainSep}{0.2\textwidth}
+%\addtolength{\LeftMainSep}{1\columnsep}
+ 
+% Small static frame for the vertical line
+%\newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
+ 
+% Content of the static frame with the vertical line
+%\begin{staticcontents}{1}
+%\hfill
+%\tikz{\draw[loosely dotted,color=RoyalBlue,line width=1.5pt,yshift=0](0,0) -- (0,\textheight);}
+%\hfill\mbox{}
+%\end{staticcontents}
+ 
+% Define the right frame (main body)
+%\addtolength{\LeftMainSep}{1.5pt}
+%\addtolength{\LeftMainSep}{1\columnsep}
+%\newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+
+%\pagestyle{empty} % Disable all page numbering
+
+\setlength{\parindent}{0pt} % Stop paragraph indentation
+
+%----------------------------------------------------------------------------------------
+%	NEW COMMANDS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\userinformation}[1]{\renewcommand{\userinformation}{#1}} % Define a new command for the CV user's information that goes into the left column
+
+\newcommand{\cvheading}[1]{{\Huge\bfseries\color{RoyalBlue} #1} \par\vspace{.6\baselineskip}} % New command for the CV heading
+\newcommand{\cvsubheading}[1]{{\Large\bfseries #1} \bigbreak} % New command for the CV subheading
+
+\newcommand{\Sep}{\vspace{1em}} % New command for the spacing between headings
+\newcommand{\SmallSep}{\vspace{0.5em}} % New command for the spacing within headings
+
+\newcommand{\aboutme}[2]{ % New command for the about me section
+\textbf{\color{RoyalBlue} #1}~~#2\par\Sep
+}
+	
+\newcommand{\CVSection}[1]{ % New command for the headings within sections
+{\Large\textbf{#1}}\par
+\SmallSep % Used for spacing
+}
+
+\newcommand{\CVItem}[2]{ % New command for the item descriptions
+\textbf{\color{RoyalBlue} #1}\par
+#2
+\SmallSep % Used for spacing
+}
+
+\newcommand{\bluebullet}{\textcolor{RoyalBlue}{$\circ$}~~} % New command for the blue bullets
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION 
+%----------------------------------------------------------------------------------------
+
+%\userinformation{ % Set the content that goes into the sidebar of each page
+%\begin{flushright}
+% Comment out this figure block if you don't want a photo
+%\includegraphics[width=0.6\columnwidth]{photo.jpg}\\[\baselineskip] % Your photo
+%\small % Smaller font size
+%John Smith \\ % Your name
+%\url{john@smith.com} \\ % Your email address
+%\url{www.johnsmith.com} \\ % Your URL
+%(000) 111-1111 \\ % Your phone number
+%\Sep % Some whitespace
+%\textbf{Address} \\
+%123 Broadway \\ % Address 1
+%City, State 12345 \\ % Address 2
+%Country \\ % Address 3
+%\vfill % Whitespace under this block to push it up under the photo
+%\end{flushright}
+%}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%\userinformation % Print your information in the left column
+%\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+\begin{center}
+\cvheading{Dineshkumar Bhaskaran} % Large heading - your name
+\end{center}
+
+\begin{flushright}
+\begin{small}
+ph:- +91-963-269-8274, \\
+email:- dineshkumarb@gmail.com,\\
+https://www.linkedin.com/in/dinesh-kumar-a88a2a7/
+\end{small}
+\end{flushright}         
+\rule{\textwidth}{1pt}
+\\
+%----------------------------------------------------------------------------------------
+%	ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\CVSection{Professional Experience Summary}{}
+	High Performance Computing Professional with 17+ years of collective experience in Compilers, HPC application, Distributed Storage, and Linux Kernel development.
+\begin{itemize} 
+	\item Strong aptitude for algorithm/application design and implementation. Involved in optimization, parallelization of Storage and Image processing algorithms using high performance computing languages like OpenCL, CUDA on various HPC platforms like NVIDIA, AMD GPGPUs and Xilinx FPGAs.
+	\item Have strong background in Linux Kernel Driver development, Linux Kernel Programming, System integration, and troubleshooting skills. Experienced in working on embedded board bring-up, porting/developing embedded driver development on Linux. Have worked on developing, enhancing and maintaining an in-house Linux based operating system and maintaining GCC based toolchain for ARM/X86 32/64 bit platforms.
+	\item Experience with SCSI, Fibre Channel storage protocols, Target mode drivers and FC switch based virtualization application and products. 
+	\item Have 6+ years of experience as a Lead, and 3+ years of international experience in Japan and US.
+	
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ |c|l|l|c| } 
+ \hline
+ \textbf{No.} & \textbf{Organization} & \textbf{Period} & \textbf{Role} \\
+ \hline
+ 1 & Advanced Micro Devices & Aug 2019 - till date & Senior Member Of Technical Staff \\
+ \hline 
+ 2 & Aricent - Altran Group & Oct 2017 - Jul 2019 & Principal Engineer \\ 
+ \hline
+ 3 & Canon India Pvt. Ltd. & Mar 2010 - Oct 2017 & Principal Engineer \\ 
+ \hline
+ 4 & Brocade Communications Pvt. Ltd. & Jan 2008 - Mar 2010 & Engineer\\ 
+ \hline
+ 5 & Tata Elxsi Pvt. Ltd. & Sep 2003 - Dec 2007 & Specialist \\ 
+ \hline
+\end{tabular}
+\end{center}
+
+
+\CVSection{Skill Set}
+
+\CVItem{\textit{Programming Languages, Tools}} {
+C, C++, OpenCL, CUDA, Exposure to Python, X86 32/64 and ARM 32 assembly languages. GNU development tools, Git, Synopsys Virtualization Platform.
+}
+
+\CVItem{\textit{Hardware and Protocols}} {
+NVIDIA and AMD GPGPUs, TI's embedded boards, Xilinx SoCs like ZC702/706 and VCU1525 FPGA. 
+Expertise in Fibre Channel and Understanding of SCSI protocol and the SCSI stack in Linux.
+}
+\Sep
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+%\CVSection{Education}
+
+%------------------------------------------------
+
+\CVSection{Education}
+\begin{itemize}
+\item \textbf{\color{RoyalBlue} \textit {Deep Learning Theory and Practice}}, IISc Bangalore
+\item \textbf{\color{RoyalBlue} \textit {M.S Software systems 2006-2009}}, BITS Pilani (Distance learning course) cgpa 5.8.
+\item \textbf{\color{RoyalBlue} \textit {B.Tech, Computer Engineering 1999-2003}}, Govt. Engg. College Trichur. (71\%).
+\item \textbf{\color{RoyalBlue} \textit {12th (CBSE)}}, Kendriya Vidyalaya Trichur. (88.8\%)
+
+\end{itemize}
+\Sep % Extra whitespace after the end of a major section
+
+\Sep
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\CVSection{Experience}
+
+%------------------------------------------------
+\CVItem{Radeon Open Compute (ROCm), \\
+	\textit{AMD India}} {
+	ROCM is a open source software development platform for HPC/Hyperscale-class GPU computing. ROCm comprises of several components ranging from Kernel Drivers, Compilers to AI/ML platforms like Tensorflow/PyTorch for AMD GPU Hardware. More information at https://github.com/RadeonOpenCompute/ROCm.
+		
+	\textbf{Involvement}
+	\renewcommand{\labelitemi}{$\bullet$}
+	\begin{itemize}
+		\item Ownership of the component ROCm Compiler Support 
+			(https://github.com/RadeonOpenCompute/ROCm-CompilerSupport).
+		\item Responsible for multiple enhancements to AMDGPU compiler like
+		\renewcommand{\labelitemi}{$\bullet$}
+		\begin{itemize}
+			\item Write support for LLVM Virtual File System.
+			\item Multithreading in LLVM's commandline parsing library.
+		\end{itemize}		
+	\end{itemize}
+	\hrulefill
+}
+
+
+\CVItem{Accelerated Storage IO library, \\
+\textit{Aricent India, 1+ years}} {
+Distributed storage functions like erasure codes, encryption, de-duplications codes are compute intensive. Aricent has developed an accelerated storage I/O library that utilizes GPUs to improve encoding and decoding processes in various erasure-code algorithms for CEPH. In addition to improving performance, the Aricent EC-offload-engine (ECoE) library frees up the underlying compute for other storage applications. 
+
+\textbf{Involvement}
+\renewcommand{\labelitemi}{$\bullet$}
+\begin{itemize}
+\item Responsible for ideation, budgeting, procurement, recruitment and management. 
+\item Responsible for identification of latest erasure code algorithms for the ECoE library. Collaborated with IISc Bangalore with to use their Minimum storage regenerating erasure code for Aricent solution. 
+\item Acted as technical lead for the project. 
+\item Responsible for preparing White papers, Blogs, Demos, Client interactions. Presented the work at SDC India and SDC santa clara 2018.  
+\end{itemize}
+\hrulefill
+}
+
+\CVItem{Open Hardware, \\
+	\textit{Aricent India, 9+ months}} {
+	Open Hardware envisions to reduce total cost of ownership for the telecom operators by delivering a reconfigurable, modular edge platform for high performing software defined radios (SDRs) using open source solutions for wide scale adoption. Open HW platforms consists of CPU banks, FPGAs, DSPs and GPU to provide generic compute resources for multiple technologies like 5G, DOCSIS and AR/VR etc. 
+	
+	\textbf{Involvement}
+	\renewcommand{\labelitemi}{$\bullet$}
+	\begin{itemize}
+		\item Technical lead for the OS and platform software. Involved from initial phases in identification of OS to developing infrastructure for net install of Linux based OSes, system and application libraries on bare metal machines using IPMI. 
+		\item Responsible for containerization using docker container of software based open source 4G stack called OpenAirInterface for OpenHW. Further involved in offloading components of OpenAirInterface code to Xilinx FPGA VCU1525. 
+		\item Responsible for integration with K8S, containerization of applications for NVIDIA GPU, Intel platforms.
+		\item Responsible preparing business collaterals, demos(enabling voice calls through private network).
+	\end{itemize}
+	\hrulefill
+}
+
+%------------------------------------------------
+\CVItem{Canon Embedded Linux Platform, \\
+\textit{Canon Inc, Japan and Canon India, 3.5 years}} {
+This project involves porting, enhancing and maintaining Linux based operating system for Canon embedded products like Surveillance cameras, Projector, Network scanners etc. The project involves wide scope ranging from porting Linux kernels (3.x, 2.x based) with Real Time support to various Industry known SoCs, supporting and fixing issues with GCC based toolchain and investigation of new Linux based technologies. 
+
+\textbf{Involvement}
+\renewcommand{\labelitemi}{$\bullet$}
+\begin{itemize}
+\item Responsible as a Technical Lead (8 ppl team). The team was responsible for porting of in-house Linux for Canon network surveillance SoCs, ZC-702/706, TI-BeagleBone black, AM437x etc.
+\item Responsible for customization to Linux platform like enabling/porting support for OP-TEE (ARM TrustZone) on ZC-706 and Porting Alljoyn (IoT stacks) and application development for Canon Products. 
+\item Involved in building, testing, enhancing and maintenance of custom GCC 6.0 based Cross compiler toolchain with Multilib support for ARM v7/v8 32/64 bit and X86 32/64bit. Responsible to create a random C program generator for compliance testing of GCC based toolchain. Involved in build automation for GCC using Linaro ABE.
+\item Responsible for streamlining and automation of Linux kernel vulnerabilities investigation and Testing. Involved in framing an organization wide policy to contribute to mainline Linux kernel development. 
+\end{itemize}
+\hrulefill
+}
+%------------------------------------------------
+
+\CVItem{Canon Parallel Image processing library, \\
+\textit{Canon Inc, Japan and Canon India, 3.8 years}} {
+This project involves in preparing an advanced parallel library on Linux for medical image processing algorithms with support for NVIDIA, AMD and X86 based platforms.  The whole library is developed in OpenCL and highly optimized to perform faster than some of open and free solutions in similar domains like OpenCV and ITK and Canon internal solutions. 
+
+\textbf{Involvement}
+\begin{itemize}
+\item Explored state of art literatures related to various algorithms (in the field of image processing, medical imaging, numerical methods) for CAMP library and choose the best available algorithm/methods for heterogeneous implementation on GPU and CPU using OpenCL.
+\item Key contributor in designing, implementing and enhancing a complete Parallel Image registration framework for both intensity based and Point based image registration related algorithms. This framework composed of algorithms like ICP, popular numerical optimizers, metrics, Resampler implemented using OpenCL.  Involved in designing and developing Test automation framework using CPP unit/Python/Bash scripts. 
+\item Porting DR (Digital Radiography) motion imaging software's image noise reduction (NR) module and image enhancement(EN) module from HLSL to OpenCL. 
+\item Responsible for performance analysis and comparison of OpenCV CUDA and OpenCL implementation of various image processing algorithms. Experience with porting image processing algorithms to CELL broadband engines using FOXC OpenCL compilers for performance analysis and benchmarking. 
+\end{itemize}
+\hrulefill
+}
+
+\CVItem{SAS (Storage area services), \\
+\textit{Brocade communications, India and U.S, 2.3 years}} {
+Brocade Storage Application Services (SAS) on Brocade 7600 Fabric Application Platform Switch provides fabric-based services through integration with high-performance storage applications. SAS delivers intelligence in SANs to perform fabric-based storage services, including online data migration, storage virtualisation, and continuous data replication and protection. SAS is successfully deployed in storage world with Brocade and OEM partner’s storage solutions like DMM, EMC Recover-point and Invista. 
+
+\textbf{Involvement}
+\begin{itemize}
+\item Responsible for SAS enhancements and related development features. Worked through SAS v2.x to v3.x versions. 
+\item Responsible for handling SAS related customer issues and maintenance. 
+\item Ownership of virtual initiator module in SAS. 
+\item Multiple deputations in Brocade-US for facilitation of SAS co-ordination activities between on-site team and India team.
+\item Involved in every phase of porting, development and enhancement of SAS (primarily Virtual Initiator module) to next generation platforms like in Brocade WAN optimizer.  
+\end{itemize}
+\hrulefill
+}
+
+\CVItem{DVR-SMM (Digital Video Recording), \\
+\textit{Tata Elxsi, 6 months}} {
+This project involved in conceptualization of a DVR (Digital Video Recording) product based on client proprietary Hard drives. This solution involved component development like stream file system, stream I/O scheduler and enhanced disk driver for the hard-drives. 
+
+\textbf{Involvement}
+\begin{itemize}
+\item Module lead for Stream Scheduler (SS) module. Deputed on-site for demonstration purposes for POC phase.
+\item Zero copy implementation in Linux-2.6.12-3. Back porting of blktrace utility for testing.
+\end{itemize}
+\hrulefill
+}
+
+\CVItem{FCTMD (Fibre channel Target mode driver), \\
+\textit{Client - CMS, Japan, 1.2 years}} {
+The project involves in development of Target Mode driver for LSI logic FC HBAs which are based on LSI-Logic Fusion Message passing technology. 
+
+\textbf{Involvement}
+\begin{itemize}
+\item Developed of LSI Logic Fibre channel driver to work in standalone mode with real world devices and with Software RAID Controller system when required.
+\item Developed of a character driver interface and a user interface for configuration of the driver
+\item Developed a proficient kernel memory leak detector which will trace various kernel memory allocation interfaces like kmalloc, vmalloc, alloc\_pages etc. for a kernel module and will generate a report when required or when the module exits. 
+
+\end{itemize}
+\hrulefill
+}
+
+\CVSection{Technical Writing/Papers and Conferences}
+\begin{enumerate}
+	
+	\item Accelerated Erasure Coding: The New Frontiers of Software-Defined Storage - 2018   
+	\begin{itemize}
+		\item    Presented at SNIA SDC Santa Clara: https://www.snia.org/events/storage-developer/presentations18 
+		\item    Presented at SNIA SDC india: https://www.snia.org/events/sdcindia/presentations18 
+		\item Business white paper: https://www.aricent.com/whitepaper/preview/17451          
+		\item   Blog: https://www.datacenterdynamics.com/opinions/why-erasure-coding-is-the-future-of-data-resiliency/  \\
+		https://www.networkcomputing.com/storage/how-erasure-coding-evolving/155400422  
+	\end{itemize}
+	\item OpenHW - A new era in mobile edge computing. Business white paper - 2019
+	\item A novel mathematical formulation of GPU based parallel derivative computation in similarity metrics for Image Registration - 2015
+	\item Userspace I/O driver performance benchmarking - 2010
+	\item Writing a Network Device driver. Published in Linux Gazette online magazine - 2003 \\
+	http://www.tldp.org/LDP/LG/issue93/bhaskaran.html
+\end{enumerate}
+
+
+%------------------------------------------------
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+
+%\clearpage % Start a new page
+
+%\userinformation % Print your information in the left column
+
+%\framebreak % End of the first column
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS
+%----------------------------------------------------------------------------------------
+
+%\CVSection{Interests} {I have interests in Photography, Table Tennis, %Badminton and reading novels etc.}
+
+%\Sep % Extra whitespace after the end of a major section
+
+\CVSection{Personal Details} 
+{Date of Birth : 04-Oct-1981 \\ 
+ Marital status: Married}
+ 
+\Sep % Extra whitespace after the end of a major section
+ 
+%------------------------------------------------
+
+%\CVItem{Professional}{Data analysis, company profiling, risk analysis, economics, web design, web app creation, software design, marketing}
+
+%------------------------------------------------
+
+%\CVItem{Personal}{Piano, chess, cooking, dancing, running}
+
+%------------------------------------------------
+
+%\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
