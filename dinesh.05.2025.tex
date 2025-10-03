@@ -162,7 +162,7 @@
         \LenToUnit{\paperwidth-2 cm-0.2 cm+0.05cm},
         \LenToUnit{\paperheight-1.0 cm}
     ){\vtop{{\null}\makebox[0pt][c]{
-        \small\color{gray}\textit{Last updated in May 2025}\hspace{\widthof{Last updated in Oct 2025}}
+        \small\color{gray}\textit{Last updated in May 2025}\hspace{\widthof{Last updated in May 2025}}
     }}}%
   }%
 }%
@@ -226,19 +226,8 @@
 
     \section{Experience}
         \begin{twocolentry}{
-            Vancouver, Aug 2025 - Nov 2025
-        }
-        \textbf{Actalent}, GPU Software Engineer (John Deere)
-          \begin{highlights}
-              \item Optimized various image processing algorithms like AutoWhiteBalance, and Blurring algorithms like Gaussian, Bilateral, Median and Homogeneous on CUDA/VPI/VPA backends, achieving ~25\% performance gains with CUDA, and augmented test infrastructure on ARM and porting VPI based algorithms to Ubuntu.
-          \end{highlights}
-        \end{twocolentry}
-
-        \begin{twocolentry}{
             Vancouver, Nov 2023 - Apr 2025
         }
-
-        \vspace{0.2 cm}
         \textbf{Arista Networks}, Software Engineer \begin{highlights}
                 \item Refactored the Layer 3 Unicast routing abstraction layer, removing approximately 7K lines of redundant code between protocol and hardware interface layers.
                 \item Unified portions of IPv4 and IPv6 handling logic using C++ templates, resulting in a cleaner codebase and ~4\% improvement in module build times.
@@ -266,12 +255,9 @@
         \begin{twocolentry}{
             Bengaluru, Oct 2017 - Jul 2019
         }
-        \textbf{Aricent (Now Capgemini Engineering)}, Principal Engineer \begin{highlights}
-              \item \textbf {Accelerated Erasure Coding:} Conceived and led the Accelerated Storage I/O (ECoE) library for CEPH, offloading erasure coding, encryption, and deduplication to GPUs. Responsible for ideation, budgeting, procurement, recruitment, and technical leadership. Evaluated state-of-the-art erasure code algorithms, collaborating with IISc Bangalore to integrate Minimum Storage Regenerating erasure codes. Drove client engagements through white papers, blogs, and demos, and presented results at SNIA SDC 2018 (India and Santa Clara) under the title \href{https://www.snia.org/educational-library/accelerated-erasure-coding-new-frontier-software-defined-storage-2018-0}{\emph{Accelerated Erasure Coding: The New Frontiers of Software-Defined Storage}}.
-              \item \textbf {Open Hardware:} Served as technical lead for Aricent’s Open Hardware program, creating a modular edge platform for SDRs and 5G workloads. Designed OS and platform software from the ground up, enabling Linux bare-metal net-installs, Docker containerization of the OpenAirInterface 4G stack, and offload of FFT components to NVIDIA GPUs and Xilinx FPGA VCU1525.
-                \begin{itemize}
-             \item Integrated OpenHW platform with Kubernetes and containerized applications across heterogeneous compute (CPU, GPU, FPGA, DSP). Built business collaterals, demos (including private 4G voice calls), and engaged in client interactions to drive adoption.
-                \end{itemize}
+        \textbf{Aricent (later Capgemini Engineering)}, Principal Engineer \begin{highlights}
+                \item Developed GPU-accelerated erasure coding algorithms for CEPH. Presented results at SNIA SDC 2018 (India and Santa Clara) under the title \href{https://www.snia.org/educational-library/accelerated-erasure-coding-new-frontier-software-defined-storage-2018-0}{Accelerated Erasure Coding: The New Frontiers of Software-Defined Storage – 2018}.
+                \item Implemented FFT offload in the OpenAirInterface 4G stack as part of an SDR solution, leveraging NVIDIA GPUs and Xilinx FPGAs to improve performance.
             \end{highlights}
         \end{twocolentry}
 
@@ -281,11 +267,8 @@
         }
         \textbf{Canon Inc}, Principal Engineer
             \begin{highlights}
-                  \item \textbf {Canon Parallel Image processing library:} Led design and development of a parallelized medical image processing library for Canon medical apparatuses. Implemented and optimized registration algorithms (ICP, Powell, LM, GD, MI, NMI, RIU, SSD, etc.), parallelized image filtering and statistical functions, and ported modules from HLSL to OpenCL. Benchmarked and tuned for NVIDIA, AMD, and x86 platforms, achieving performance surpassing OpenCV/ITK and Canon’s internal libraries.
-                    \begin{itemize}
-                        \item Managed multi-site teams in Japan and India with responsibilities spanning project planning, execution, budgeting, hiring, and training. Established test automation infrastructure and cross-team workflows that reduced release turnaround time, improved reliability, and quality.
-                    \end{itemize}
-    \item \textbf {Canon Embedded Linux Platform:} Led porting, enhancement, and long-term maintenance of Linux OS for Canon embedded products including surveillance cameras, projectors, and network scanners. Managed kernel bring-up on Intel Haswell, TI AM437x, Xilinx ZC-702/706, and proprietary ARM SoCs; developed and maintained cross-compiler toolchains; ensured real-time kernel support; automated testing frameworks; and streamlined processes for kernel vulnerability detection, patching, and validation.
+                \item Led a team to create an efficient medical image processing library for Canon medical apparatuses. Parallelized and optimized Image registration components like Pre-processing algorithms, Optimizers (Powell, LM, GD, SGD), Metrics (MI, NMI, RIU, SSD), transformation algorithms, and Resampler.
+                \item Managed a team that maintained and enhanced Linux based OS for Canon embedded products. Involved in porting Linux kernel and essential system applications to various ARM based SoCs.
             \end{highlights}
         \end{twocolentry}
 
@@ -293,10 +276,10 @@
         \begin{twocolentry}{
             Bengaluru, Sep 2003 - Mar 2010
         }
-        \textbf{Early Experience}, Software Engineer
+        \textbf{Early Experience (Brocade communication and Tata Elxsi)}, Software Engineer
             \begin{highlights}
-            \item \textbf {Brocade communications (Now Broadcom):} Contributed to storage virtualization and replication solutions as part of Brocade’s Storage Application Services (SAS). Owned the Virtual Initiator module, drove enhancements from SAS v2.x to v3.x, resolved critical customer issues, and supported global teams with multiple deputations to the U.S. for product coordination and next-gen platform porting.
-                \item \textbf {Tata Elxsi:} Delivered kernel-level development across diverse domains, including DVR subsystems (stream scheduler, zero-copy I/O, disk driver optimizations) and Fibre Channel target mode drivers for LSI HBAs for CMS Japan. Implemented Linux kernel utilities, user-space configuration interfaces, and a custom kernel memory leak detector for debugging and reliability.
+                \item Worked on Brocade Storage Application Services. SAS services include storage virtualization, online data migration, CDR, and CDP. Owned virtualized initiator module in SAS solution.
+                \item Worked on Target Mode driver for LSI Logic FC HBAs based on LSI-Logic Fusion message passing technology to act as a virtualized storage box.
             \end{highlights}
         \end{twocolentry}
         
@@ -323,22 +306,16 @@
 
     \section{Technologies}        
         \begin{onecolentry}
-          
-            \textbf{Languages:} C, C++, Python, parallel languages (HIP, OpenCL, CUDA, PTX, HLSL), and low-level (ARM/x86 asm).
+            \textbf{Languages:} C, HIP, OpenCL, familiar with CUDA, C++, Python, PTX, HLSL, ARM, X86 assembly.
         \end{onecolentry}
 
         \vspace{0.2 cm}
         \begin{onecolentry}
-            \textbf{Protocols stacks:} storage (FC, SCSI), networking (USB), telecom (OpenAirInterface 4G). 
+            \textbf{Protocols stacks:} FC, Familiar with SCSI, USB, OpenAirInterface 4G stack in Linux Kernel.
         \end{onecolentry}
 
         \vspace{0.2 cm}
         \begin{onecolentry}
-            \textbf{Tools :} ROCm, GNU toolchain, testing frameworks, profilers. 
-        \end{onecolentry}
-
-        \vspace{0.2 cm}
-        \begin{onecolentry}
-            \textbf{Hardware/SoCs:} AMD/NVIDIA DCGPUs, Jetson, Xilinx, TI, Intel, Canon SoCs.
+            \textbf{Tools and ASICs:} ROCm and GNU Toolchain, Xilinx ZC-702/706, TI AM437x, AMD Instinct GPUs gfx90x series.
         \end{onecolentry}
 \end{document}
